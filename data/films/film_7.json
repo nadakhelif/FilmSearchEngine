@@ -1,0 +1,22 @@
+{
+  "title": "Avatar",
+  "director": "James Cameron",
+  "year": 2009,
+  "plot": "On the lush alien world of Pandora, a paraplegic former soldier becomes part of an experiment where human consciousness is transferred to an avatar to interact with the native Na'vi.",
+  "cast": [
+    "Sam Worthington",
+    "Zoe Saldana",
+    "Sigourney Weaver",
+    "Stephen Lang"
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "reviews": [
+    "Visually stunning and immersive.",
+    "A great exploration of environmentalism and native cultures.",
+    "The world of Pandora is beautifully brought to life."
+  ]
+}

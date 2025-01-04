@@ -1,0 +1,21 @@
+{
+  "title": "Pulp Fiction",
+  "director": "Quentin Tarantino",
+  "year": 1994,
+  "plot": "Les destins de plusieurs personnages s'entremêlent dans une histoire non linéaire impliquant deux tueurs à gages philosophes, un boxeur, un gangster et sa femme.",
+  "cast": [
+    "John Travolta",
+    "Samuel L. Jackson",
+    "Uma Thurman",
+    "Bruce Willis"
+  ],
+  "genres": [
+    "Crime",
+    "Drame"
+  ],
+  "reviews": [
+    "Un chef-d'œuvre du cinéma moderne",
+    "Révolutionnaire dans sa narration",
+    "Dialogues mémorables"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "The Shawshank Redemption",
+  "director": "Frank Darabont",
+  "year": 1994,
+  "plot": "The story of a man wrongly convicted of murder who forms a close friendship with a fellow inmate, while maintaining his hope and will to escape.",
+  "cast": [
+    "Tim Robbins",
+    "Morgan Freeman",
+    "Bob Gunton",
+    "William Sadler"
+  ],
+  "genres": [
+    "Drama"
+  ],
+  "reviews": [
+    "One of the best films ever made.",
+    "A deeply moving exploration of hope and friendship.",
+    "Unforgettable performances from Robbins and Freeman."
+  ]
+}

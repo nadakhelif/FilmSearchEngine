@@ -1,0 +1,22 @@
+{
+  "title": "The Dark Knight",
+  "director": "Christopher Nolan",
+  "year": 2008,
+  "plot": "Batman faces off against the Joker, a criminal mastermind who seeks to create chaos in Gotham City, while grappling with his own sense of justice.",
+  "cast": [
+    "Christian Bale",
+    "Heath Ledger",
+    "Aaron Eckhart",
+    "Michael Caine"
+  ],
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ],
+  "reviews": [
+    "An intense, thought-provoking masterpiece.",
+    "Heath Ledger's Joker is iconic.",
+    "A film that transcends the superhero genre."
+  ]
+}

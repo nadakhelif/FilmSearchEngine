@@ -1,0 +1,21 @@
+{
+  "title": "Titanic",
+  "director": "James Cameron",
+  "year": 1997,
+  "plot": "The story of a young couple from different social backgrounds who fall in love aboard the doomed R.M.S. Titanic.",
+  "cast": [
+    "Leonardo DiCaprio",
+    "Kate Winslet",
+    "Billy Zane",
+    "Danny Nucci"
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ],
+  "reviews": [
+    "A timeless classic.",
+    "The visuals of the sinking Titanic are breathtaking.",
+    "A true epic blending historical tragedy with personal emotion."
+  ]
+}

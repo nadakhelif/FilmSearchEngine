@@ -1,0 +1,21 @@
+{
+  "title": "The Godfather",
+  "director": "Francis Ford Coppola",
+  "year": 1972,
+  "plot": "The story of the powerful Corleone family and the rise of Michael Corleone from reluctant outsider to ruthless head of the family.",
+  "cast": [
+    "Marlon Brando",
+    "Al Pacino",
+    "James Caan",
+    "Diane Keaton"
+  ],
+  "genres": [
+    "Crime",
+    "Drama"
+  ],
+  "reviews": [
+    "A cinematic masterpiece.",
+    "Marlon Brando's performance is legendary.",
+    "A timeless film about family, loyalty, and betrayal."
+  ]
+}

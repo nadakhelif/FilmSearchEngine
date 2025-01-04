@@ -10,7 +10,7 @@ A powerful and flexible search engine for querying film data with support for tw
   - [Vectorial Search](#vectorial-search)
 - [Usage](#usage)
 - [Installation](#installation)
-- [License](#license)
+
 
 ## Overview
 This project implements a search engine that allows users to query a dataset of films using two search strategies:

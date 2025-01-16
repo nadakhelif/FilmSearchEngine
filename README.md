@@ -55,12 +55,6 @@ To perform a search:
 
 The results will be displayed in a list with the film titles and their associated relevance score (for vectorial search).
 
-### Example Query:
-For the Boolean search type, you could enter the query:
-- `batman AND joker`
-
-For the Vectorial search type, you could enter a more complex query like:
-- `batman joker superhero`
 
 ## Installation
 

@@ -1,6 +1,7 @@
 """Script to generate sample film data."""
 import json
 import os
+import csv
 
 SAMPLE_FILMS = [
     {
@@ -161,3 +162,51 @@ def create_sample_data(data_dir: str):
         
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(film, f, ensure_ascii=False, indent=2)
+
+
+def create_film_files_from_tsv(tsv_filepath: str, output_dir: str):
+    """
+    Create JSON film description files based on a TSV file input.
+    
+    Args:
+        tsv_filepath (str): Path to the input TSV file.
+        output_dir (str): Directory where JSON files will be saved.
+    """
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    
+    with open(tsv_filepath, 'r', encoding='utf-8') as tsv_file:
+        reader = csv.DictReader(tsv_file, delimiter='\t')
+        for row in reader:
+            # Extract film details
+            title = row['primaryTitle']
+            film_data = {
+                "title": title,
+                "year": int(row['startYear']) if row['startYear'].isdigit() else None,
+                "runtimeMinutes": int(row['runtimeMinutes']) if row['runtimeMinutes'].isdigit() else None,
+                "overview": row.get('overview', ''),
+                "language": row.get('original_language', ''),
+                "release_date": row.get('release_date', ''),
+                "keywords": row.get('keywords', '').split(',') if row.get('keywords') else [],
+                "synopsis": row.get('synopsis', ''),
+                "worldwide_gross": int(row['worldwide']) if row['worldwide'].isdigit() else None,
+                "distributor": row.get('distributor', ''),
+                "mpaa": row.get('mpaa', ''),
+                "budget": row.get('budget', ''),
+                "genres": row.get('genres', '').split(',') if row.get('genres') else [],
+                "actors": row.get('actors', '').split(',') if row.get('actors') else [],
+                "total_actor_tenure": float(row['total_actor_tenure']) if row['total_actor_tenure'] else None,
+                "avg_actor_tenure": float(row['avg_actor_tenure']) if row['avg_actor_tenure'] else None
+            }
+            
+            # Generate filename (sanitize title for filesystem compatibility)
+            sanitized_title = "".join(c if c.isalnum() or c in " -_" else "_" for c in title)
+            filename = f"{sanitized_title}.json"
+            filepath = os.path.join(output_dir, filename)
+            
+            # Write JSON file
+            with open(filepath, 'w', encoding='utf-8') as json_file:
+                json.dump(film_data, json_file, ensure_ascii=False, indent=2)
+
+# Example usage
+tsv_filepath = "filtered_final_movies_3.tsv"  # Path to your TSV file

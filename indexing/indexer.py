@@ -70,8 +70,6 @@ class FilmIndexer:
             self.document_lengths[doc_id] = math.sqrt(length)
     
     def _tokenize(self, text: str) -> List[str]:
-        """Convert text to tokens."""
-        # Simple tokenization - can be enhanced
         return text.split()
     
     def save_index(self, index_path: str):
